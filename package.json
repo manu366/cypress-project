@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "cypress": "^10.4.0",
+    "cypress-iframe": "^1.0.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "campagin": "npx cypress run --spec cypress/e2e/createCampaign.js --headed",
+    "contact": "npx cypress run --spec cypress/e2e/createContact.js",
+    "document": "npx cypress run --spec cypress/e2e/createDocument.js",
+    "lead": "npx cypress run --spec cypress/e2e/createLead.js",
+    "cy:run": "cypress run",
+    "cy:parallel headed" : "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
+    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js "
+  },
+  "author": "manohara",
+  "license": "ISC",
+  "description": "cmr project vtiger",
+  "dependencies": {
+    "cypress-parallel": "^0.9.1"
+  }
+}

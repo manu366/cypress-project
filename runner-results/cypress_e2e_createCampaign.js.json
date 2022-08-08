@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-08-08T09:49:25.042Z",
+  "duration": 42948,
+  "file": "cypress\\e2e\\createCampaign.js"
+}

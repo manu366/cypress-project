@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-08-08T09:49:26.590Z",
+  "duration": 47596,
+  "file": "cypress\\e2e\\createContact.js"
+}

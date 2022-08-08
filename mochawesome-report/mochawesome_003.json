@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-04T11:36:23.475Z",
+    "end": "2022-08-04T11:37:09.126Z",
+    "duration": 45651,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ffb9bfe8-c674-4735-bdca-f4a8e21a5387",
+      "title": "",
+      "fullFile": "cypress\\e2e\\createDocument.js",
+      "file": "cypress\\e2e\\createDocument.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "87d0380a-dcdd-4e43-83d5-f734d0af0971",
+          "title": "contact",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "createContact",
+              "fullTitle": "contact createContact",
+              "timedOut": null,
+              "duration": 40716,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "open.url;\nloginPage.usernameTextfield.type(data.username);\nloginPage.passwordTextfield.type(data.password);\nloginPage.submitButton.click();\nhomepage.documentButton.click();\ndocumentPage.createDocumentIcon.click();\ndocumentDetailPage.titleTextfield.type(\"resume\");\ndocumentDetailPage.sourceIcon.click();\ndocumentDetailPage.textareafield.type('manohara');\ndocumentDetailPage.sourceIcon.click();\ndocumentDetailPage.filenameButton.selectFile(\"C:/Users/user/Desktop/manohara resume.docx\");\ndocumentDetailPage.saveButton.eq(1).click();\ndocumentInformationPage.titleTextfield.then(title => {\n  expect(title.text()).to.contains('resume');\n});\nhomepage.adminstratorButton.trigger(\"mouseover\");\nhomepage.signoutButton.click();",
+              "err": {},
+              "uuid": "ae81918a-d581-458d-879f-aca3748713ca",
+              "parentUUID": "87d0380a-dcdd-4e43-83d5-f734d0af0971",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ae81918a-d581-458d-879f-aca3748713ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40716,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
