@@ -1,10 +1,10 @@
 {
   "suites": 1,
   "tests": 1,
-  "passes": 1,
+  "passes": 0,
   "pending": 0,
-  "failures": 0,
-  "start": "2022-08-08T12:17:40.296Z",
-  "duration": 48781,
+  "failures": 1,
+  "start": "2022-08-09T07:46:32.441Z",
+  "duration": 48644,
   "file": "cypress\\e2e\\createLead.js"
 }

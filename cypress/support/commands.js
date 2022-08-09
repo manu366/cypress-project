@@ -17,8 +17,10 @@
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //
 //
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+// to fetch the data from xlsx
+Cypress.Commands.add('parseXlsx', (inputfile) => {
+    return cy.task('parseXlsx',{filePath:inputfile})
+})
 //
 //
 // -- This will overwrite an existing command --
