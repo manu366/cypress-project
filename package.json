@@ -16,7 +16,8 @@
     "lead": "npx cypress run --spec cypress/e2e/createLead.js",
     "cy:run": "cypress run",
     "cy:parallel headed" : "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
-    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js "
+    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js ",
+    "allScripts":"npx cypress run"
   },
   "author": "manohara",
   "license": "ISC",

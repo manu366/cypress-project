@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2022-08-08T09:50:13.762Z",
-  "duration": 48401,
+  "start": "2022-08-08T12:17:40.296Z",
+  "duration": 48781,
   "file": "cypress\\e2e\\createLead.js"
 }
