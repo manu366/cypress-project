@@ -2,7 +2,7 @@
 const open=require('../support/pageObject/baseURL.js')
 const loginPage=require('../support/pageObject/loginPage')
 describe('gatdatafromexcel',function(){
-var username,password
+ let username,password
     before(function(){
     cy.parseXlsx('cypress/fixtures/testdata/test data.xlsx').then((jsondata) =>{
         username=jsondata[0].data[1][0]
