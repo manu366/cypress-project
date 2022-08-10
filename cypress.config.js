@@ -10,6 +10,8 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
+
       on("task", {
         parseXlsx({ filePath }) {
           return new Promise((resolve, reject) => {
@@ -27,12 +29,13 @@ module.exports = defineConfig({
   specPattern:"cypress/e2e/*.js",
 },
   pageLoadTimeout: 1200000,
-  reporter: 'mochawesome',
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
-    reportDir: 'cypress/mochawesome.js',
-    overwrite: false,
-    html: false,
-    json: false
+    reportDir: 'cypress/reports',
+    charts:true,
+    reportPageTitle:"my test suite",
+    embeddedScreenshots: true,
+    inlineAssets:true
   },
   
 })
