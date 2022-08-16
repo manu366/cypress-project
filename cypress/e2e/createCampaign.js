@@ -27,7 +27,7 @@ describe('campagin',()=>{
         campagainInformationPage.campaignTextfield.then(function (name) {
             expect(name.text()).to.contains("TYC")            
         })
-        homepage.adminstratorButton.should('be.visible').trigger("mouseover")
+        homepage.adminstratorButton.should('be.visible').trigger('mouseover')
         homepage.signoutButton.should('be.visible').click()
     })
 })
