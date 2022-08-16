@@ -1,10 +1,10 @@
 {
-  "suites": 0,
+  "suites": 1,
   "tests": 1,
-  "passes": 0,
+  "passes": 1,
   "pending": 0,
-  "failures": 1,
-  "start": "2022-08-09T07:47:50.455Z",
-  "duration": 1146,
+  "failures": 0,
+  "start": "2022-08-11T10:55:28.702Z",
+  "duration": 13600,
   "file": "cypress\\e2e\\getDataFromExcel.js"
 }

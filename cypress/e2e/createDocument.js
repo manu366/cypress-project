@@ -5,14 +5,14 @@ const homepage = require('../support/pageObject/homepage')
 const documentPage = require('../support/pageObject/documentPage')
 const documentDetailPage = require('../support/pageObject/documentDetailPage')
 const documentInformationPage = require('../support/pageObject/documentInformationPage')
-describe('contact',()=>{
+describe('document',()=>{
     var data
     before(function(){
       cy.fixture('commondata').then(function(jsonData){
          data = jsonData
       })
     })
-    it('createContact',()=>{
+    it('createDocument',()=>{
         open.url
         loginPage.usernameTextfield.should('be.visible').should('be.enabled').type(data.username)
         loginPage.passwordTextfield.should('be.visible').should('be.enabled').type(data.password)

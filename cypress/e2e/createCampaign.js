@@ -5,14 +5,14 @@ const homepage = require('../support/pageObject/homepage')
 const campaignPage = require('../support/pageObject/campaignPage')
 const campaignDetailPage = require('../support/pageObject/campaignDetailPage')
 const campagainInformationPage = require('../support/pageObject/campaignInformationPage')
-describe('contact',()=>{
+describe('campagin',()=>{
     var data
     before(function(){
       cy.fixture('commondata').then(function(jsonData){
          data = jsonData
       })
     })
-    it('createContact',()=>{
+    it('createCampagin',()=>{
         open.url
         loginPage.usernameTextfield.should('be.visible').should('be.enabled').type(data.username)
         loginPage.passwordTextfield.should('be.visible').should('be.enabled').type(data.password)

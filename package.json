@@ -3,19 +3,19 @@
     "cypress": "^10.4.0",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.2.0",
-    "node-xlsx": "^0.21.0",
-    "cypress-parallel": "^0.1.8"
+    "cypress-parallel": "^0.9.1",
+    "node-xlsx": "^0.21.0"
   },
   "name": "cypress",
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
     "campagin": "npx cypress run --spec cypress/e2e/createCampaign.js --headed",
-    "contact": "npx cypress run --spec cypress/e2e/createContact.js",
-    "document": "npx cypress run --spec cypress/e2e/createDocument.js",
-    "lead": "npx cypress run --spec cypress/e2e/createLead.js",
+    "contact": "npx cypress run --spec cypress/e2e/createContact.js --headed",
+    "document": "npx cypress run --spec cypress/e2e/createDocument.js --headed",
+    "lead": "npx cypress run --spec cypress/e2e/createLead.js --headed",
     "cy:run": "cypress run",
-    "cy:parallel headed": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a --headed",
+    "cy:parallel headed": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
     "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js ",
     "allScripts": "npx cypress run"
   },

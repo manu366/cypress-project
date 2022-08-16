@@ -34,8 +34,7 @@ module.exports = defineConfig({
     reportDir: 'cypress/reports',
     charts:true,
     reportPageTitle:"my test suite",
-    embeddedScreenshots: true,
+    embededscreenshoots: true,
     inlineAssets:true
-  },
-  
+  }
 })
