@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-08-16T10:14:28.099Z",
+  "duration": 7347,
+  "file": "cypress\\e2e\\handlingAlertpopup.js"
+}

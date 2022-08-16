@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2022-08-11T10:53:24.207Z",
-  "duration": 56232,
+  "start": "2022-08-16T10:12:25.082Z",
+  "duration": 65314,
   "file": "cypress\\e2e\\createCampaign.js"
 }

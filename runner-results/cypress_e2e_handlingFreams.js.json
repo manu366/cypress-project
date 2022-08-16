@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-08-16T10:14:41.007Z",
+  "duration": 11808,
+  "file": "cypress\\e2e\\handlingFreams.js"
+}

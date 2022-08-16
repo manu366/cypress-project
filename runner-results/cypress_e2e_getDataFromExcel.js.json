@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2022-08-11T10:55:28.702Z",
-  "duration": 13600,
+  "start": "2022-08-16T10:14:27.942Z",
+  "duration": 18151,
   "file": "cypress\\e2e\\getDataFromExcel.js"
 }

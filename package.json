@@ -17,7 +17,9 @@
     "cy:run": "cypress run",
     "cy:parallel headed": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
     "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js ",
-    "allScripts": "npx cypress run"
+    "allScripts": "npx cypress run",
+    "cy:run:smoke":"npx cypress run --spec 'cypress/e2e/createCampaign.js,cypress/e2e/createContact.js,cypress/e2e/createDocument.js,cypress/e2e/createLead.js'",
+    "cy:run:regression":"npx cypress run --spec 'cypress/e2e/createCampaign.js,cypress/e2e/createContact.js,cypress/e2e/createDocument.js,cypress/e2e/createLead.js,cypress/e2e/getDataFromExcel.js,cypress/e2e/handlingAlertpopup.js,cypress/e2e/handlingFreams.js'"
   },
   "author": "manohara",
   "license": "ISC",

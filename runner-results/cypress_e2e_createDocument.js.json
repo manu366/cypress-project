@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2022-08-11T10:54:31.265Z",
-  "duration": 52876,
+  "start": "2022-08-16T10:13:38.891Z",
+  "duration": 43279,
   "file": "cypress\\e2e\\createDocument.js"
 }

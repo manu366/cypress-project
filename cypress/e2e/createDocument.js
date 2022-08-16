@@ -30,6 +30,5 @@ describe('document',()=>{
         })
         homepage.adminstratorButton.should('be.visible').trigger("mouseover")
         homepage.signoutButton.should('be.visible').click()
-
     })
 })
