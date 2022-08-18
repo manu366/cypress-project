@@ -23,7 +23,7 @@ describe('document',()=>{
         documentDetailPage.sourceIcon.should('be.visible').click()
         documentDetailPage.textareafield.should('be.visible').should('be.enabled').type('manohara')
         documentDetailPage.sourceIcon.should('be.visible').click()
-        documentDetailPage.filenameButton.should('be.visible').selectFile("C:/Users/user/Desktop/manohara resume.docx")
+        documentDetailPage.filenameButton.should('be.visible').selectFile("C:/Users/User/Desktop/cypress/cypress/cypress/fixtures/testdata/test data.xlsx")
         documentDetailPage.saveButton.eq(1).should('be.visible').click()
         documentInformationPage.titleTextfield .then((title)=>{
           expect(title.text()).to.contains('resume')
